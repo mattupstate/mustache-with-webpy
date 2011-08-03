@@ -4,23 +4,21 @@ This is a little example application illustrating how one might use mustache tem
 
 One thing to note about this example is that I used the lastest code from the master branch of the defactor pystache project. When I installed pystache using pip it seemed to be an older version.
 
-I'd recommend using virtualenv, as the following steps will utilize it
-
-1. Clone the repository
+Clone the repository
 
     git clone git@github.com:mattupstate/mustache-with-webpy.git
     
-2. Setup an environment using virtual env
+Setup an environment using virtual env
 
     cd mustache-with-webpy
     virtualenv --no-site-packages env
     source env/bin/activate
     
-3. Install web.py
+Install web.py
 
     pip install web.py
     
-4. Run the web.py server
+Run the web.py server
 
     python main.py
 
