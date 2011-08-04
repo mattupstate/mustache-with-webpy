@@ -1,15 +1,16 @@
-import views.examples as views
 from models.examples import Example
 
 class ExamplesIndex(object):
+    '''Examples Index. URL: /examples/'''
+    
     def GET(self):
-        v = views.ExamplesIndex()
-        v.set('examples', Example.all())
-        return v.render()
+        self.view.set('examples', Example.all())    # 
+        return self.view.render()
     
 class ExamplesShow(object):
+    '''Examples Show. URL: /examples/<example_id>/'''
+    
     def GET(self, example_id=None):
-        v = views.ExamplesShow()
-        v.set('example', Example.get_example(int(example_id)))
-        return v.render()
+        self.view.set('example', Example.get_example(int(example_id)))
+        return self.view.render()
         

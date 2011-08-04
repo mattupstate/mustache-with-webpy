@@ -1,8 +1,8 @@
-import views.main as view
+from controllers.base import Controller
 
-class MainIndex(object):
+class MainIndex(Controller):
+    '''Main Index (Home Page). URL: /'''
     
     def GET(self):
-        v = view.MainIndex()
-        v.set('welcome', 'Welcome!')
-        return v.render()
+        self.view.set('welcome', 'Welcome!')
+        return self.view.render()
