@@ -2,7 +2,7 @@
 
 This is a little example application illustrating how one might use mustache templates with a web.py project
 
-One thing to note about this example is that I used the lastest code from the master branch of the defactor pystache project. When I installed pystache using pip it seemed to be an older version.
+One thing to note about this example is that I used the lastest code from the master branch of the defacto pystache project. When I installed pystache using pip it seemed to be an older version.
 
 Clone the repository
 
